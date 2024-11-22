@@ -1,0 +1,170 @@
+:root {
+    --primary-color: #1a2a40;
+    --accent-color: #ff6b6b;
+    --neutral-bg: #f5f5f5;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--neutral-bg);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.nav-link-FOCUS{
+    color:black !important;
+}
+
+.nav-link:hover{
+    color: red !important;
+}
+
+.page-header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.account-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.account-section h5 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.btn-custom {
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+.btn{
+    text-transform: none !important;
+}
+
+/* Profile Picture Styling */
+.profile-picture-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neutral-bg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Layout */
+.profile-info-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.form-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* Ensure full-height layout for sticky footer */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex-grow: 1;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.modal-content-custom {
+    background-color: #121212 !important; /* Pure black background */
+    color: #ffffff !important; /* White text */
+}
+
+/* Ensure the label has the same dimensions and alignment as the button */
+label[for="fileInput"] {
+    display: flex; /* Use flexbox for better alignment */
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    width: 120px; /* Match the width of the profile picture */
+    height: 40px; /* Set a height that looks good */
+    margin: 10px auto; /* Center the label with margin on the top and bottom */
+    border-radius: 25px; /* Optional: matching the button style */
+    font-weight: 600;
+    font-size: 0.85em; /* Adjust font size for better visibility */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    background-color: var(--accent-color); /* Match the button color */
+    color: white; /* Match button text color */
+}
+
+/* Optional: Add hover effects for the label */
+label[for="fileInput"]:hover {
+    background-color: darken(var(--accent-color), 10%); /* Change color on hover */
+}
+
+#fileName {
+    display: block; /* Ensure it behaves like a block element */
+    word-wrap: break-word; /* Allows long words to wrap */
+    overflow-wrap: break-word; /* Similar to word-wrap for modern browsers */
+    white-space: normal; /* Ensures normal text wrapping */
+    font-size: 1em; /* Set a comfortable font size */
+    color: var(--text-color); /* Ensure the text color is readable */
+    text-align: left; /* Center the text */
+    margin-top: 10px; /* Add space between the button and the file name */
+    max-width: 150px; /* Limit the width to control wrapping */
+    width: auto; /* Auto to fit content naturally */
+    position: relative;
+}
+
+th{
+    text-align: center;
+}

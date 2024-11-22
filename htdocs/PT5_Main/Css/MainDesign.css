@@ -1,0 +1,267 @@
+body {
+    overflow-x: hidden;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+a{
+    font-weight: bold !important;
+}
+
+.Topbar-custom{
+    background-color: #343a40;
+    height: 75px;
+    z-index: 100;
+}
+
+.customButtonPos{
+    position: fixed !important;
+    margin-left: 5px;
+}
+
+.custom-title-text{
+    position: absolute;
+    margin-left: 25px;
+    left: 80px;
+
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.custom-Add-link{
+    position: absolute;
+    left: 350px;
+    bottom: 25px;
+
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+    display: inline-block;
+
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+
+    border-radius: 8px;
+
+    color: rgb(185, 243, 76);
+
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: font-size 0.15s ease, color 0.125s ease;
+    transform-origin: center;
+}
+
+.custom-Add-link:hover{
+    font-size: 1.23em;
+    color: rgba(0, 0, 0, 0.8);
+    transition: font-size 0.15s ease, color 0.125s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.custom-Add-link:active{
+    color: rgba(255,0,0,0.8);
+    transition: color 0.125 ease;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 50px;
+    padding: 30px;
+    transition: margin-left 0.3s ease; /* Smooth transition for content */
+}
+
+.main-content.shift {
+    margin-left: 235px; 
+    margin-right: 25px;
+}
+
+#menuToggle {
+    position: fixed;
+    top: 15px;
+    left: 15px; 
+    z-index: 200; 
+}
+
+/* Side Bar CSS */
+.sidebar {
+    height: 100%; 
+    width: 250px;
+    position: fixed; 
+    top: 0; 
+    left: -250px; 
+    background-color: #343a40;
+    width: 200px;
+    
+    overflow-y: auto; 
+
+    text-align: left !important;
+
+    transition: left 0.3s ease, transform 0.3s ease;
+    z-index: 100;
+}
+
+.SideBarObjects{
+    margin-top: 80px;
+}
+
+.sidebar.show {
+    left: 0; /* Slide in */
+}
+
+.userCustomNameTEXT{
+    font-weight: bold;
+}
+
+/* Custom CSS for link effects */
+.NavigationLinks, a {
+    font-size: 18.5;
+    margin-top: 20px;
+    text-align: left;
+    align-items: center;
+    white-space: nowrap;
+    
+    transition: font-size 0.15s ease-in-out;
+
+    text-decoration: none;
+}
+
+.NavigationLinks a {
+    padding: 5px 10px;
+    border-radius: 4px; 
+
+    color: white; 
+    text-decoration: none; 
+}
+
+.NavigationLinks a:hover {
+    background-color: #495057;
+
+    font-size: 1.1em;
+
+    transition: font-size 0.15s ease-in-out;
+}
+
+/* Custom Glow Current Page */
+.custom-glow-Current-Page{
+    text-shadow: 0 0 10px rgb(255,255,255,0.8);
+}
+
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2d2d2d; /* Dark background for table */
+    color: #ffffff !important; /* Light text color */
+    font-size: 0.95rem;
+
+    text-align: center;
+}
+
+/* Table header styling */
+thead th {
+    background-color: #343a40; 
+    color: #ffffffd3 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #6c757d;
+
+    padding: 14px 12px !important;
+
+    text-align: center;
+    align-items: center;
+
+    padding-bottom: 15px;
+}
+
+/* Hide arrows in Chrome, Safari, Edge, and Opera */
+/* this will remove the spinners/arrow thing beside the number input */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Table body styling */
+tbody td {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    color: #ffffffd3 !important;
+    border-bottom: 1px solid #6c757d;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #3b3b3b;
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: #ffffffc4;
+    color: #000000e7;
+    border-radius: 8px;
+
+    font-size: 13px !important;   
+
+    transition: background-color 0.1s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+input[type="submit"]:hover{
+    background-color: #3c4043be;
+    color: #ffffffd3;
+    cursor: pointer;
+
+    font-size: 14px !important;
+
+    transition: background-color 0.1s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+#EditButtonInput{
+    width: 58px;
+    height: 22px;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+}
+
+#MakeOrderButtonInput{
+    width: 80px;
+    height: 22px;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+}
+
+.Content_title{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 85px;
+}
+
+.ScrollingTable{
+    margin-top: 50px;
+}
+
+.highlight {
+    background-color: #0091ff2f;
+}
+
+/* Custom label css */
+.CustomLabel {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
