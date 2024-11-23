@@ -371,7 +371,7 @@
                     const nonce = generateNonce();
                     const clientId = '335141065600-1fd37eljhpn5hba011einlgukj4fb8hk.apps.googleusercontent.com'; // Client ID
                     // Change the redirectUri Based on your {LoginPage.php} Web Link (Get the link when you open the {LoginPage.php} Page and replace here)
-                    const redirectUri = 'https://fluffy-yodel-97qv5qgrwxv5hr6v-8000.app.github.dev/htdocs/PT5_Main/LoginPage.php';
+                    const redirectUri = 'https://congenial-potato-7vrq5rj6w4pr2xjpg-80.app.github.dev/PT5_Main/LoginPage.php';
                     const scope = 'openid email profile';
                     const responseType = 'id_token';
                     const prompt = 'select_account';

@@ -56,7 +56,6 @@
                     header("Location: ../../Pages/ProductAdd.php");
                     exit;
                 }else{
-
                     // After Deleting previous picture We Add new one
                     $Sanitized_FileName = uniqid(). "_" . basename($FileName);
                     $TARGET_UPLOAD_DIRECTORY ="/workspaces/Php-SQL-Activities/htdocs/PT5_Main/productPicUploads/";

@@ -57,7 +57,7 @@
                 $AddedPng = null;
 
                 if (isset($_FILES['profile-photo'])){
-                    if ($_FILES['profile-photo']['size'] != 0){
+                    if ($_FILES['profile-photo']['error'] === UPLOAD_ERR_OK && $_FILES['profile-photo']['size'] > 0){
                         $FileName = $_FILES['profile-photo']['name'];
                         $FileType = $_FILES['profile-photo']['type'];
                         $File_tmpName = $_FILES['profile-photo']['tmp_name'];
@@ -233,7 +233,7 @@
                 $AddedPng = false;
 
                 if (isset($_FILES['profile-photo'])){
-                    if ($_FILES['profile-photo'] != null || $_FILES['profile-photo'] != ""){
+                    if ($_FILES['profile-photo']['error'] === UPLOAD_ERR_OK && $_FILES['profile-photo']['size'] > 0){
                         $FileName = $_FILES['profile-photo']['name'];
                         $FileType = $_FILES['profile-photo']['type'];
                         $File_tmpName = $_FILES['profile-photo']['tmp_name'];
